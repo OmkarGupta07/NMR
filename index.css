@@ -1,0 +1,55 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(36, 36, 236);
+}
+
+.foodlogo{
+    width: 200px;
+}
+
+.navitems{
+    padding: 0px 20px;
+}
+.navitems > ul {
+    font-size: 24px;
+display: flex;
+list-style: none;
+
+}
+.navitems > ul >li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.rescontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-cards {
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+
+}
+
+.res-cards :hover{
+    cursor: pointer;
+    border: 1px solid cyan;
+
+}
+
+.search{
+    padding: 10px;
+}
+
+
+.res-image{
+    width: 190px;
+}
+
+.filter-btn{
+    margin: 10px;
+    cursor: pointer;
+}

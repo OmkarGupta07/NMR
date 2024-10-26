@@ -1,0 +1,61 @@
+
+  1st argument takes name of the tag  which we want to create 2 is to specify attributes such as  classname,id,events such as onclick etc , 3 is to display on screen
+const h1tag=React.createElement('h1',{id:'heading',onClick:()=>{alert('heyy every onr')}}, "hello boii") creates element 
+
+const root=ReactDOM.createRoot(document.getElementById('root'))  helps to append element create in a dom 
+
+ for Nested Structre we use array 
+  helps to append element create in a dom 
+
+NPM package manager it is also know as dependencies
+package.json is configuration for npm it keeps track of version which are installed in it 
+App cana i have 2 type of packages dev dependency other is normal dependency 
+^ is know as carat it help us to automatically minor upgrade to latest version & ~ install major upgrade
+ package-lock.json keeps  tracks of exact version of all the package 
+ every dependencies has it own package.json and other dependency
+node modules are collection of dependencies we dont npde_modules on git because we can re genrate through npm i 
+Parcel  -Dev Build,Local Server , Hot module replacement , File watching algorithm , caching for faster builds , Image optimization , minification , bundling , compressing , differential bundling - support older browser , error handling , remove unused code , https
+
+NPX - executing packages without downloading
+ NPM run start BTS execute the package parcel with index.html as we have setup in package.json
+
+Episode 3
+JSX and react are different
+JSX is not HTML it has html like syntax
+
+creating react element through jsx
+ this is not the valid js code as js engine is not able to process cuz it only understand EcmaScript
+so the Parcel-babel transpiled this code so that it can understand 
+babel transpile jsx -> React.createelement -> js object -> html element 
+ jsx code is wrapped inside of round bractes because babel need to know where jsx start and ends
+const JSXHeading= () => (<h1 id="heading" className="heading">
+    Hey I am using jsx</h1>);
+
+console.log(JSXHeading);
+
+React component is normal js function which returns piece of jsx code
+Componenet compositaion means using one comeponent into another
+jsx automatically sanatize  malicious js code 
+const HeadingComponent=()=>(
+    <div>
+        {JSXHeading()}
+     <h1>Functional Component</h1>
+    </div>
+)
+
+Props are the argument to react component which has data
+
+keys helps to uniquely identify the component if we dont specify it will re render all the elemeents every time when new element is added
+config driven ui -according to backend data the ui changes
+In single file we can only have 1 default export
+import {LOGO_URL} from "../../src/utils/Constant" -> Named Export 
+
+whenever state variable updates react rerender the component 
+React uses Reconcilation Algorithm aka react fiber -> React 16
+virual dom is representation of the actual dom
+
+Actual dom eg:
+<div>
+<p>
+</p>
+</div>
