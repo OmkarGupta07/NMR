@@ -71,14 +71,14 @@ const API_DATA = [
     },
     {
         "token_type": "special",
-        "item_id": 10,
+        "item_id": 101,
         "image_url": "https://b.zmtcdn.com/images/search_tokens/app_icons/special_10.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A",
         "description": 4.3,
         "text": "Desserts & Bakes"
     },
     {
         "token_type": "special",
-        "item_id": 13,
+        "item_id": 53,
         "image_url": "https://b.zmtcdn.com/images/search_tokens/app_icons/special_13.png?fit=around%7C88%3A88&crop=88%3A88%3B%2A%2C%2A",
         "description": 4.1,
         "text": "North Indian"

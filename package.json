@@ -5,6 +5,7 @@
   "scripts": {
     "start": "parcel index.html",
     "build":"parcel build index.html",
+    "clear-cache": "rmdir /s /q .parcel-cache",
     "test": "jest"
   },
   "repository": {

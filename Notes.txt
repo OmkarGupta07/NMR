@@ -59,3 +59,13 @@ Actual dom eg:
 <p>
 </p>
 </div>
+
+useeffect - 
+if we have dont have dependency array every time when the component gets render the use effect is called 
+if we have empty dependency array it will render only at initial stage just once when the component is render 1 time
+if we have dependency array with value it will only be called when the array is updated  
+
+MonoLith 
+microservices - we have different service for different jobs
+whenever state variables updates react triggers Reconcilation cycle
+

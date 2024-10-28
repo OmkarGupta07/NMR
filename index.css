@@ -53,3 +53,22 @@ list-style: none;
     margin: 10px;
     cursor: pointer;
 }
+
+.ShimmerContainer{
+    display: flex;
+}
+
+.ShimmerCards{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    background-color: cyan;
+}
+
+.login{
+    cursor: pointer;
+}
+
+.filter-inp{
+    display: flex;
+}
