@@ -65,6 +65,18 @@ if we have dont have dependency array every time when the component gets render 
 if we have empty dependency array it will render only at initial stage just once when the component is render 1 time
 if we have dependency array with value it will only be called when the array is updated  
 
+Hooks should be created inside of component only 
+
+Link is used to redirect on other page without reloading the entire page it just reload the component
+
+Routing-
+Client Side Routing
+Server Side Routing
+
+class lifecycle- first the constructor is called then the render is called once the component is rendered then compoonentdidmount is called
+componentdidmount is used to make api call 
+
+
 MonoLith 
 microservices - we have different service for different jobs
 whenever state variables updates react triggers Reconcilation cycle

@@ -1,6 +1,7 @@
 import RestaurantContainer from "./RestaurantCont"
 import {useState,useEffect} from 'react'
 import Shimmer from "../components/ShimmerUI"
+import { Link } from "react-router-dom"
 
 const Body= () =>{
     const [Listofres,setListofres] =useState([])
@@ -18,8 +19,8 @@ const GetData=async ()=>{
     
     
    let info= jsonobj.data.cards.map(ele =>{
-    let { areaName , name , costForTwo , cloudinaryImageId  } = ele?.card?.card?.info || {};
-    return {areaName,name,costForTwo,cloudinaryImageId};
+    let { areaName , name , costForTwo , cloudinaryImageId,id  } = ele?.card?.card?.info || {};
+    return {areaName,name,costForTwo,cloudinaryImageId,id};
      })
      setListofres(info);
      setFilterData(info);
@@ -42,7 +43,12 @@ return  Listofres.length==0 ? <Shimmer/>:
             <button className="filter-btn"> Get Top Rated Restaurant </button>
             <div className="rescontainer">
              
-            {FilterData.map((CurrRes,idx) => CurrRes.name !=undefined ? <RestaurantContainer  key={CurrRes.id} resName={CurrRes}/>: "")}
+            {FilterData.map((CurrRes,idx) =>
+                {debugger; 
+                return CurrRes.name !=undefined ?
+                <Link to={`/restaurants/${CurrRes.id}`}><RestaurantContainer  key={CurrRes.id} resName={CurrRes}/> </Link>
+                : "" 
+                }) }
             </div>
         </div>
     )

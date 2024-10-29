@@ -4,7 +4,7 @@
   "description": "Episode_2",
   "scripts": {
     "start": "parcel index.html",
-    "build":"parcel build index.html",
+    "build": "parcel build index.html",
     "clear-cache": "rmdir /s /q .parcel-cache",
     "test": "jest"
   },
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.27.0"
   }
 }

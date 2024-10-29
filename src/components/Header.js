@@ -1,5 +1,6 @@
 import { LOGO_URL } from "../../src/utils/Constant";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [name, setName] = useState("LogIn");
@@ -16,9 +17,9 @@ useEffect(()=>{
             </div>
             <div className="navitems">
                 <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>Contact Us</li>
+                    <li><Link to="/"> Home </Link></li>
+                    <li><Link to="/About"> About Us </Link></li>
+                    <li> <Link to="/Contact"> Contact Us </Link></li>
                     <li>Cart</li>
                   
                         <button 

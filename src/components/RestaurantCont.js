@@ -1,7 +1,7 @@
 import {SWIGGY_ASSESTS} from "../utils/Constant"
 
 const RestaurantContainer =({resName}) =>{
-    let {areaName,name,costForTwo,cloudinaryImageId} =resName
+    let {areaName,name,costForTwo,cloudinaryImageId,id} =resName
     
    
    return (
